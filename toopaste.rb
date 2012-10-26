@@ -20,5 +20,5 @@ get '/' do
 end
 
 post '/' do
-#  .....
+	erb :showruby
 end
