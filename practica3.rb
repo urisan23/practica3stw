@@ -16,7 +16,7 @@ class String
 end
 
 get '/' do
-  erb :new
+  haml :new
 end
 
 post '/' do
