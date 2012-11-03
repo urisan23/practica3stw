@@ -1,4 +1,4 @@
-<h3 align="center"> <%= "#{type} highlight" %> </h3>
+<h3 align="center"> <%= "#{type}" %> </h3>
 <center>
   <div id="content" class="sbody">
     <%= highlight.formatted_body(type)%>

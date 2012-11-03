@@ -1,5 +1,5 @@
-<h3 align="center">Enter your code below</h3>
 <center>
+  <h3>Enter your code below</h3>
   <form action="/" method="POST">
     <br/>
     <textarea name="body" id="body" rows="20" cols="100" width="500px"></textarea> <br> <br/>   

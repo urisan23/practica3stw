@@ -4,11 +4,11 @@
   <title><%= @title || 'Toopaste!' %></title>
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
   <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
   <center>
     <h1>Syntax Highlighting</h1>
   </center>
+</head>
+<body>
   <%= yield %>
 </body>
 </html>
