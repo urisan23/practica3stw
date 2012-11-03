@@ -3,7 +3,8 @@ require 'syntaxi'
 require 'erb'
 
 class String
-  def formatted_body
+  def formatted_body(lang)
+    styles = {:ruby => "syntax_ruby", :xml => "syntax_xml", :yaml => "syntax_yaml"}
     source = "[code lang='ruby']
                 #{self}
               [/code]"
@@ -21,5 +22,5 @@ get '/' do
 end
 
 post '/' do
-#  .....
+  erb :show, :locals => {:code => params[:code], :type => params[:lang]}
 end
