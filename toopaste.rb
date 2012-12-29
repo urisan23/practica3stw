@@ -1,8 +1,10 @@
 require 'sinatra'
+require 'erb'
 require 'syntaxi'
 
 class String
-  def formatted_body
+  def formatted_body(lang)
+    styles = {:ruby => "syntax_ruby"}
     source = "[code lang='ruby']
                 #{self}
               [/code]"
@@ -20,5 +22,5 @@ get '/' do
 end
 
 post '/' do
-	erb :showruby
+	erb :showruby, :locals => {:code => params[:code], :type => params[:lang]}
 end
